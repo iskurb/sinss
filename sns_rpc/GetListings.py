@@ -48,7 +48,7 @@ async def main():
 
         total_pages = first_page.get("total_pages", 1)
         results = first_page.get("data", [])
-        print(f"Получение листингов")
+        print(f"\n\n\n\n\n\nПолучение листингов")
         print(f"Всего страниц: {total_pages}")
 
         tasks = [fetch_page(session, page) for page in range(2, total_pages + 1)]
@@ -69,3 +69,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
